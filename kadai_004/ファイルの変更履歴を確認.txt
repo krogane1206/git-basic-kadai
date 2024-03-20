@@ -1,0 +1,56 @@
+excal@DESKTOP-SO3M0IV MINGW64 ~
+$ git init git_challenge
+Initialized empty Git repository in C:/Users/excal/git_challenge/.git/
+
+excal@DESKTOP-SO3M0IV MINGW64 ~
+$ pwd
+/c/Users/excal
+
+excal@DESKTOP-SO3M0IV MINGW64 ~
+$ cd git_challenge
+
+excal@DESKTOP-SO3M0IV MINGW64 ~/git_challenge (main)
+$ echo"Hello,world">hello_world.txt
+bash: echoHello,world: command not found
+
+excal@DESKTOP-SO3M0IV MINGW64 ~/git_challenge (main)
+$ echo "Hello.world" > hello_world.txt
+
+excal@DESKTOP-SO3M0IV MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+excal@DESKTOP-SO3M0IV MINGW64 ~/git_challenge (main)
+$ git commit -m "Initial commit: add hello_world.txt"
+[main (root-commit) dd2b9af] Initial commit: add hello_world.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+excal@DESKTOP-SO3M0IV MINGW64 ~/git_challenge (main)
+$ echo "This is my second line." >> hello_world.txt
+
+excal@DESKTOP-SO3M0IV MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+excal@DESKTOP-SO3M0IV MINGW64 ~/git_challenge (main)
+$ git commit -m "Add a second line to hello_world.txt"
+[main a7780b8] Add a second line to hello_world.txt
+ 1 file changed, 1 insertion(+)
+
+excal@DESKTOP-SO3M0IV MINGW64 ~/git_challenge (main)
+$ git log
+commit a7780b8c17a57b4559fc27eaf9eff563e4df61fc (HEAD -> main)
+Author: krogane1206 <excalibur19861206@gmail.com>
+Date:   Wed Mar 20 23:43:54 2024 +0900
+
+    Add a second line to hello_world.txt
+
+commit dd2b9af89bbcae81b08c572777852afaaaaf61ce
+Author: krogane1206 <excalibur19861206@gmail.com>
+Date:   Wed Mar 20 23:39:45 2024 +0900
+
+    Initial commit: add hello_world.txt
+
+excal@DESKTOP-SO3M0IV MINGW64 ~/git_challenge (main)
+$
